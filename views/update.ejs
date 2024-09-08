@@ -1,0 +1,8 @@
+<%-include("partials/header.ejs") %>
+<body>   
+   <form action="/update/<%=id %>" method="POST">
+    <input name="title" type="text" class="post-iput" placeholder="Post title" value="<%=title %>"/>
+    <textarea name="text" class="post-iput" placeholder="Post text..."><%=text %></textarea>
+    <input type="submit" value="OK" />
+   </form> 
+</body>
