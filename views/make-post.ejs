@@ -1,8 +1,11 @@
 <%-include("partials/header.ejs") %>
-<body>
+<div id="postMakePage">
    <form action="/post" method="POST">
-    <input name="title" type="text" class="post-iput" placeholder="Post title" />
-    <textarea name="text" class="post-iput" placeholder="Post text..."></textarea>
-    <input type="submit" value="POST" />
+    <label for="title">Title</label>
+    <input name="title" type="text" class="post-iput" placeholder="20ch" minlength="3" maxlength="20" required/>
+    <label for="text">Text</label>
+    <textarea name="text" class="post-iput" placeholder="Post text..." required></textarea>
+    <input type="submit" class="btn btn-success" value="POST" />
    </form> 
-</body>
+</div>
+<%-include("partials/footer.ejs") %>
