@@ -5,6 +5,7 @@
 }
 body{
     background-color: #eeececdc;
+    font-family: "Source Sans 3", sans-serif;
 }
 #Nav{
     position: fixed;
@@ -15,6 +16,7 @@ li>a{
     color: #424242;
     font-weight: 800;
     font-size: 2rem;
+    font-family: "Exo 2", sans-serif;
 }
 li>a:hover{
     color: #282828;
@@ -34,12 +36,13 @@ main{
     padding-top: 120px;
 }
 #aboutPage{
-width: 80%;
+width: 60%;
 }
 #aboutPage p{
 font-size: 3rem;
 }
 h1{
+    font-family: "Exo 2", sans-serif;
     font-size: 5rem;
 }
 #allPostsPage{
@@ -50,8 +53,11 @@ h1{
     margin-bottom: 50px;
 }
 #allPostsPage h2{
-    margin-bottom: 200px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 7rem;
+    margin-bottom: 80px;
 }
+
 .postDiv{
 width: 90%;
 margin-top: 40px;
@@ -61,15 +67,16 @@ background-color: #48CFCB;
 padding: 10px;
 border-radius: 10px;
 }
-.postDiv>div{
+.postDiv>div:first-of-type{
     width: 87%;
+}
+#butts{
+    display: flex;
+    gap: 10px;
 }
 .postDiv>a{
 border-radius: .25rem;
 padding: 6px 12px;
-}
-.postDiv>form{
-    margin-left: 10px;
 }
 svg{
     fill: white;
@@ -77,6 +84,9 @@ svg{
     width: 30px;
 }
 h3{
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
     font-size: 4rem;
 }
 .postDiv p{
@@ -107,6 +117,7 @@ h3{
     padding: 10px;
 }
 #postMakePage input,#updatePostPage input{
+    text-transform: uppercase;
     margin-bottom: 20px;
 }
 #postMakePage textarea,#updatePostPage textarea{
@@ -120,6 +131,7 @@ h3{
     align-items: center;
 }
 #viewPage>h1{
+text-transform: uppercase;
 text-decoration: underline #229799;
 }
 #viewPage p{
@@ -132,4 +144,147 @@ footer{
     height: 250px;
     background-color: #229799;
     font-size: 3rem;
+}
+footer svg{
+    fill: #282828;;
+    height:50px;
+    width: 50px;
+    margin-left: 10px;
+    }
+footer svg:hover{
+scale: 1.2;
+background-color: white;
+border-radius: 50%;
+}
+ .bi-github:hover{
+    fill: #181717;
+
+}
+.bi-telegram:hover{
+    fill: #26A5E4;
+}
+.bi-telegram::after,.bi-github::after{
+    fill: rgb(255, 215, 196);
+}
+
+@media(min-width:992px) and (max-width:1200px){
+    h3{
+        font-size: 3.2rem;
+    }
+    #allPostsPage{
+        margin-bottom: 70px;
+    }
+}
+
+@media(min-width:790px) and (max-width:992px){
+    #aboutPage{
+        width: 90%;
+     }
+     #allPostsPage{
+        margin-bottom: 90px;
+    }
+     #allPostsPage h2{
+         font-size: 5rem;
+        margin-bottom: 109px;
+    }
+        
+    h3{
+        font-size: 2.5rem;
+        }
+    .postDiv p{
+    font-size: 1.7rem;
+    }
+    footer{
+        font-size: 2.5rem;
+    }
+    
+}
+@media(min-width:576px) and (max-width:790px){
+    #aboutPage{
+        width: 90%;
+     }
+     #aboutPage p{
+        font-size: 2.5rem;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        #allPostsPage{
+            margin-bottom: 120px;
+        }
+     #allPostsPage h2{
+         font-size: 4rem;
+        margin-bottom: 109px;
+    }       
+    h3{
+        font-size: 1.8rem;
+        }
+    .postDiv p{
+    font-size: 1.3rem;
+    }
+    svg{
+        height: 20px;
+        width: 20px;
+    }
+    #butts{
+        flex-direction: column;
+    }
+    #postMakePage form,#updatePostPage form{
+        width: 90%;
+    
+    }
+    footer{
+        font-size: 2rem;
+    }
+}
+@media(max-width:576px){
+    li>a{
+        font-size: 1.6rem;
+    }
+    #aboutPage{
+        width: 90%;
+        margin-bottom: 90px;
+     }
+     #aboutPage p{
+        font-size: 2rem;
+        }
+        h1{
+            font-size: 3rem;
+        }
+        #allPostsPage{
+            margin-bottom: 140px;
+        }
+     #allPostsPage h2{
+         font-size: 3rem;
+        margin-bottom: 109px;
+    }       
+    h3{
+        font-size: 1.2rem;
+        }
+    .postDiv p{
+    font-size: 0.9rem;
+    }
+    svg{
+        height: 16px;
+        width: 16px;
+    }
+    #butts{
+        flex-direction: column;
+    }
+    #postMakePage form,#updatePostPage form{
+        width: 90%;
+    
+    }
+    #viewPage>h1{
+        font-size: 2.7rem;
+        }
+    #viewPage p{
+            width: 80%;
+            font-size: 2rem;
+            margin-bottom: 160px;
+            overflow-wrap: break-word; 
+        }
+    footer{
+        font-size: 1.6rem;
+    }
 }
